@@ -112,6 +112,117 @@
         </div>
     </section>
 
+    <!-- About Us Preview -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">About Us</h2>
+            <p class="text-gray
+            <a href="about.html" class="text-blue-600 hover:underline">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- Our Services Preview -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="flex flex-col items-center">
+                    <img src="https://source.unsplash.com/100x100/?tour-guide" alt="Tour Guides" class="mb-4">
+                    <h3 class="text-xl font-bold">Tour Guides</h3>
+                    <p class="text-gray-600">Expert guides to enhance your experience.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://source.unsplash.com/100x100/?travel-packages" alt="Packages" class="mb-4">
+                    <h3 class="text-xl font-bold">Packages</h3>
+                    <p class="text-gray-600">Customizable travel packages for all.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://source.unsplash.com/100x100/?transportation" alt="Transportation" class="mb-4">
+                    <h3 class="text-xl font-bold">Transportation</h3>
+                    <p class="text-gray-600">Convenient and reliable transport options.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://source.unsplash.com/100x100/?hotels" alt="Hotels" class="mb-4">
+                    <h3 class="text-xl font-bold">Hotels</h3>
+                    <p class="text-gray-600">Comfortable stays at top-rated hotels.</p>
+                </div>
+            </div>
+            <a href="services.html" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">View All Services</a>
+        </div>
+    </section>
+
+    <!-- Gallery / Image Showcase -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative group">
+                    <img src="https://source.unsplash.com/400x300/?sri-lanka,culture" alt="Culture" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">Culture</p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="https://source.unsplash.com/400x300/?sri-lanka,food" alt="Food" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">Food</p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="https://source.unsplash.com/400x300/?sri-lanka,landmarks" alt="Landmarks" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">Landmarks</p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="https://source.unsplash.com/400x300/?sri-lanka,people" alt="People" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">People</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Reviews -->
+    <section class="py-12 bg-gradient-to-r from-blue-50 to-blue-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-blue-800">What Our Visitors Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <blockquote class="text-gray-600 italic mb-4">"Sri Lanka is a paradise on earth! The culture and hospitality are unmatched."</blockquote>
+                    <p class="font-bold text-blue-800">- John Doe, USA</p>
+                    <p class="text-yellow-500">★★★★★</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <blockquote class="text-gray-600 italic mb-4">"The food and scenic beauty left me speechless. Highly recommend!"</blockquote>
+                    <p class="font-bold text-blue-800">- Maria Gonzalez, Spain</p>
+                    <p class="text-yellow-500">★★★★★</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <blockquote class="text-gray-600 italic mb-4">"A perfect destination for adventure and relaxation. Loved every moment!"</blockquote>
+                    <p class="font-bold text-blue-800">- Ahmed Khan, UAE</p>
+                    <p class="text-yellow-500">★★★★★</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SwiperJS Integration -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Swiper('.swiper-container', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
